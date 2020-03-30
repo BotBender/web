@@ -2,7 +2,7 @@
 include 'egor.php';
 
 ////dada
-
+echo 'asd';
 
 //json_class();
 //выводит данные тип object из json-файла
@@ -21,5 +21,8 @@ include 'egor.php';
 //удаление необходимо 
 //json_item_del(id);
 
-//чтение будет реализовано напрямую на frontend
+//удаление необходимо 
+//json_item_sel(bagin_i,end_i);
 
+
+}
