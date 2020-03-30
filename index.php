@@ -1,14 +1,10 @@
 <?
-$array = array(
-	'id' => '10903', 
-	'hid' => 'null', 
-	'full_name' => 'null', 
-	'address' => '420012, ., ., 1', 
-	'phone' => '543-51-55'
-);
- 
-$json = json_encode($array);
-echo $json;
+include egor.php;
 
-//$item=json_class();
-//echo $item->id;
+////dada
+
+$item=json_class();
+echo $item->id;
+//добав
+json_item_add(id,hid,full_name,address,phone);
+json_item_update(id,hid,full_name,address,phone);
