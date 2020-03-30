@@ -14,15 +14,14 @@ echo 'asd';
 
 
 //json_item_add(id,hid,full_name,address,phone);
-//создание ; 
+//добавленее json-элемента в файле LPU.json ; 
 
-//редактирование;
 //json_item_update(id,hid,full_name,address,phone);
-
-//удаление необходимо 
+//редактирование json-элемента в файле LPU.json ;
+ 
 //json_item_del(id);
+//Удалить json-элемента в файле LPU.json ;
 
-//удаление необходимо 
 //json_item_sel(bagin_i,end_i);
-
+//вывод json-элементов с bagin_i по end_i из файла LPU.json ;
 

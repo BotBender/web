@@ -1,17 +1,17 @@
-<?
+<?php
 switch ( $_GET['deist']) {
 case 'add':
-  echo(json_item_add(id,hid,full_name,address,phone));
+  echo(json_item_add($_GET['id'],$_GET['hid'],$_GET['full_name'],$_GET['address'],$_GET['phone']));
   break;
 case 'update':
-  echo(json_item_update(id,hid,full_name,address,phone));
+  echo(json_item_update($_GET['id'],$_GET['hid'],$_GET['full_name'],$_GET['address'],$_GET['phone']));
   break;
 case 'del':
-  echo(json_item_del(id));
+  echo(json_item_del($_GET['id']));
   break;
 case 'sel':
-  echo(json_item_sel(bagin_i,end_i));
+  echo(json_item_sel($_GET['bagin_i'],$_GET['end_i']));
   break;
 default:
-  echo(json_item_sel(bagin_i,end_i));
+  echo(eror_deist);
   break;
