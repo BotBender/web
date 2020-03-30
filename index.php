@@ -1,5 +1,5 @@
 <?
-include egor.php;
+include 'egor.php';
 
 ////dada
 
