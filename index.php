@@ -16,3 +16,8 @@ $item->address='1';
 $item->phone='1';
 
 echo $item->id;
+
+////dada
+
+$item=json_class();
+echo $item->id;
