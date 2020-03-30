@@ -9,7 +9,7 @@ function json_class(){
 	return $array;
 }
 //вызываем функцию и выводим ее результат в html
-print_r(json_class());
+var_dump(json_class());
 
 /*$json = '{[id] => Значение 1
     [hid] => Значение 2
