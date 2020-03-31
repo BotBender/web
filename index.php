@@ -1,6 +1,6 @@
 <?
 include 'egor.php';
-
+include 'stas.php';
 ////dada
 echo 'asd';
 var_dump(json_class());
