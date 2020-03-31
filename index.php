@@ -2,9 +2,9 @@
 include 'egor.php';
 include 'stas.php';
 ////dada
-echo 'asd';
+
 var_dump(json_class());
-echo 'asd';
+
 //json_class();
 //выводит данные тип object из json-файла
 

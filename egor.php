@@ -1,22 +1,22 @@
 <?php
-$array = fopen("LPU.json", 'r') or die("не удалось открыть файл");
-while(!feof($fd))
-{
-$str = $str + htmlentities(fgets($fd));
-echo $str;
-
-fclose($fd);
 
 
-function json_class()
-	//строка json
-	$json ='{"a":1,"b":2,"c":3,"d":4,"e":5}';
+
+function json_class(){
+	$fd = fopen("LPU.json", 'r') or die("?? ??????? ??????? ????"); 
+	$str ='';
+	while(!feof($fd)) 
+	{ 
+		//echo fgets($fd);
+		$str = $str . fgets($fd);  
+	} 
+	fclose($fd); 
 	//декодируем строку
-	$array = json_decode($json);
+	$array = json_decode($str);
 	//возвращаем значение
 	return $array;
 }
 //вызываем функцию и выводим ее результат в html
-var_dump(json_class());
+
 
 ?>
