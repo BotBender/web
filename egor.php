@@ -79,7 +79,7 @@ function json_item_del($id){
 function json_item_sel($bagin_i,$leng_i){
 	$object=json_class();
 	foreach ($object as $key => $value) {
-		if($key== $bagin_i){
+		if($key == 0){
 			return $object[$key];
 		} 
 	}
