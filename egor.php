@@ -47,7 +47,7 @@ function json_item_add($id,$hid,$full_name,$address,$phone){
 	$new_item->full_name=$full_name;
 	$new_item->address=$address;
 	$new_item->phone=$phone;
-	array_push($object->LPU[], $new_item);
+	array_push($object->LPU(), $new_item);
 	class_json($object);
 	return 1;
 }
