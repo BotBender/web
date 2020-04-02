@@ -78,6 +78,11 @@ function json_item_del($id){
 
 function json_item_sel($bagin_i,$leng_i){
 	$object=json_class();
+	foreach ($object as $key => $value) {
+		if($key== $bagin_i){
+			return $object[$key];
+		} 
+	}
 	return array_slice ($object,$bagin_i,$leng_i);
 }
 
