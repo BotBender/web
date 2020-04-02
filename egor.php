@@ -95,7 +95,7 @@ function json_item_sel($bagin_i,$leng_i){
 		echo $key."{";
 		if($key == 0){
 			foreach ($value as $key2 => $value2) {
-				echo $key."[";
+				echo $key2."[";
 				if($key2 == (string) $bagin_i){
 					return $value2;
 				}
