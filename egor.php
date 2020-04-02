@@ -70,6 +70,7 @@ function json_item_del($id){
 			foreach ($value as $key2 => $value2) {
 				if($value2->id == (string) $id){
 					echo $key2.'</br>';
+					unset($object[0][$key2]);
 					unset($value[$key2]);
 				}
 			}
