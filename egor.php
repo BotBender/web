@@ -69,14 +69,10 @@ function json_item_del($id){
 		if($key == 0){
 			foreach ($value as $key2 => $value2) {
 				if($key2->id == (string) $id){
+					echo $i++.'</br>';
 					unset($value[$key2]);
 				}
 			}
-		} 
-	}
-	foreach ($object as $key => $value) {
-		if($value->id == $id){
-			unset($object[$key]);
 		} 
 	}
 	class_json($object);
