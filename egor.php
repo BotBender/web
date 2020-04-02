@@ -92,13 +92,17 @@ function json_item_del($id){
 function json_item_sel($bagin_i,$leng_i){
 	$object=json_class();
 	foreach ($object as $key => $value) {
+		echo $key."{";
 		if($key == 0){
 			foreach ($value as $key2 => $value2) {
+				echo $key."[";
 				if($key2 == (string) $bagin_i){
 					return $value2;
 				}
+				echo "]";
 			}
 		} 
+		echo "}";
 	}
 	return 0;
 }
