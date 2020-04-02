@@ -33,8 +33,12 @@ function class_json($object){
 function json_item_add($id,$hid,$full_name,$address,$phone){
 	$object=json_class();
 	foreach ($object as $key => $value) {
-		if($value->id == $id){
-			return 0;
+		if($key == 0){
+			foreach ($value as $key2 => $value2) {
+				if($value2->id == (string) $id){
+					return 0;
+				}
+			}
 		} 
 	}
 	$new_item=new item_class;
@@ -51,11 +55,16 @@ function json_item_add($id,$hid,$full_name,$address,$phone){
 function json_item_update($id,$hid,$full_name,$address,$phone){
 	$object=json_class();
 	foreach ($object as $key => $value) {
-		if($value->id == $id){
-			$value->hid=$hid;
-			$value->full_name=$full_name;
-			$value->address=$address;
-			$value->phone=$phone;
+		if($key == 0){
+			foreach ($value as $key2 => $value2) {
+				if($value2->id == (string) $id){
+					echo $key2.'</br>';
+					$value2->hid=$hid;
+					$value2->full_name=$full_name;
+					$value2->address=$address;
+					$value2->phone=$phone;
+				}
+			}
 		} 
 	}
 	class_json($object);
@@ -71,7 +80,6 @@ function json_item_del($id){
 				if($value2->id == (string) $id){
 					echo $key2.'</br>';
 					unset($object->LPU[$key2]);
-					unset($value[$key2]);
 				}
 			}
 		} 
