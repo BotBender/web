@@ -92,7 +92,7 @@ function json_item_sel($bagin_i,$leng_i){
 			}
 		} 
 	}
-	return array_slice ($object,$bagin_i,$leng_i);
+	return 0;
 }
 
 ?>
