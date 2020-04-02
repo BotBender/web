@@ -83,6 +83,7 @@ function json_item_sel($bagin_i,$leng_i){
 			foreach ($value as $key2 => $value2) {
 				if($key2 == 0){
 					return $value2;
+				}
 			}
 		} 
 	}
