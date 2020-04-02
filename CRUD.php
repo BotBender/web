@@ -11,7 +11,7 @@ case 'del':
   echo(json_item_del($_GET['id']));
   break;
 case 'sel':
-  echo(json_item_sel($_GET['bagin_i'],$_GET['end_i']));
+  var_dump(json_item_sel($_GET['bagin_i'],$_GET['end_i']));
   break;
 default:
   echo('eror_deist');
