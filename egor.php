@@ -65,7 +65,15 @@ function json_item_update($id,$hid,$full_name,$address,$phone){
  
 function json_item_del($id){
 	$object=json_class();
-
+	foreach ($object as $key => $value) {
+		if($key == 0){
+			foreach ($value as $key2 => $value2) {
+				if($key2->id == (string) $id){
+					unset($value[$key2]);
+				}
+			}
+		} 
+	}
 	foreach ($object as $key => $value) {
 		if($value->id == $id){
 			unset($object[$key]);
