@@ -80,7 +80,7 @@ function json_item_sel($bagin_i,$leng_i){
 	$object=json_class();
 	foreach ($object as $key => $value) {
 		if($key == 0){
-			return $object[$key];
+			return $value;
 		} 
 	}
 	return array_slice ($object,$bagin_i,$leng_i);
