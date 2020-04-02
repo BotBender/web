@@ -24,14 +24,14 @@ function json_class(){
 }
 //вызываем функцию и выводим ее результат в html
 function class_json($object){
-	$json=json_encode($object)
+	$json=json_encode($object);
 	$f=fopen("LPU.json",'w');
 	fwrite($f,$json);
 	fclose($f);
 }
 
 function json_item_add($id,$hid,$full_name,$address,$phone){
-	$object=json_class()
+	$object=json_class();
 	foreach ($object as $key => $value) {
 		if($value->id == $id){
 			return 0;
@@ -43,7 +43,7 @@ function json_item_add($id,$hid,$full_name,$address,$phone){
 	$new_item->full_name=$full_name;
 	$new_item->address=$address;
 	$new_item->phone=$phone;
-	array_push(($object, $new_item);
+	array_push($object, $new_item);
 	class_json($object);
 	return 1;
 }
@@ -76,7 +76,7 @@ function json_item_del($id){
 
 
 function json_item_sel($bagin_i,$leng_i){
-	$object=json_class()
+	$object=json_class();
 	return array_slice ($object,$bagin_i,$leng_i);
 }
 
