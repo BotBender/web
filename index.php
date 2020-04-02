@@ -1,5 +1,4 @@
 <?
-include 'CRUD.php';
 include 'egor.php';
 include 'stas.php';
 ////dada

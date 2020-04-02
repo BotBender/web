@@ -1,4 +1,5 @@
 <?php
+include 'egor.php';
 switch ( $_GET['deist']) {
 case 'add':
   echo(json_item_add($_GET['id'],$_GET['hid'],$_GET['full_name'],$_GET['address'],$_GET['phone']));
@@ -15,4 +16,5 @@ case 'sel':
 default:
   echo('eror_deist');
   break;
+}
 ?>
