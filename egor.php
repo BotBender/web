@@ -47,7 +47,7 @@ function json_item_add($id,$hid,$full_name,$address,$phone){
 	$new_item->full_name=$full_name;
 	$new_item->address=$address;
 	$new_item->phone=$phone;
-	array_push($object->LPU[], $new_item);
+	array_push($object->LPU, $new_item);
 	class_json($object);
 	return 1;
 }
@@ -92,17 +92,17 @@ function json_item_del($id){
 function json_item_sel($bagin_i,$leng_i){
 	$object=json_class();
 	foreach ($object as $key => $value) {
-		echo $key."{";
+		
 		if($key == 0){
 			foreach ($value as $key2 => $value2) {
-				echo $key2."[";
+				
 				if($key2 == (string) $bagin_i){
 					return $value2;
 				}
-				echo "]";
+				
 			}
 		} 
-		echo "}";
+		
 	}
 	return 0;
 }
