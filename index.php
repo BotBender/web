@@ -1,6 +1,6 @@
-<?
+﻿<?
 include 'egor.php';
-include 'stas.php';
+include 'front.php';
 ////dada
 
 var_dump(json_class());
